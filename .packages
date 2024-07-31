@@ -41,7 +41,9 @@ http_parser:packages/http_parser/
 io:packages/io/
 jinja:packages/jinja/
 js:packages/js/
+json:packages/json/
 json_annotation:packages/json_annotation/
+json_serializable:packages/json_serializable/
 juventutem:packages/juventutem/
 lints:packages/lints/
 logging:packages/logging/
@@ -67,6 +69,8 @@ shelf:packages/shelf/
 shelf_packages_handler:packages/shelf_packages_handler/
 shelf_static:packages/shelf_static/
 shelf_web_socket:packages/shelf_web_socket/
+source_gen:packages/source_gen/
+source_helper:packages/source_helper/
 source_map_stack_trace:packages/source_map_stack_trace/
 source_maps:packages/source_maps/
 source_span:packages/source_span/
