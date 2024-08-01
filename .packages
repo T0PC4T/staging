@@ -41,6 +41,7 @@ http_parser:packages/http_parser/
 io:packages/io/
 jinja:packages/jinja/
 js:packages/js/
+js_interop:packages/js_interop/
 json:packages/json/
 json_annotation:packages/json_annotation/
 json_serializable:packages/json_serializable/

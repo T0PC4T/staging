@@ -2,11 +2,7 @@
 .packages
 about.html
 images/banner.jpg
-images/banner.png
-images/banner2.png
-images/favicon.ico
 images/logo.png
-images/wyd.jpeg
 index.html
 main.dart.js
 packages/$sdk/dev_compiler/amd/require.js
@@ -53,4 +49,5 @@ packages/vm_service/DEPENDENCIES.md
 packages/vm_service/src/DEPENDENCIES.md
 packages/vm_service/src/README.md
 packages/web/fix_data.yaml
+src/plugins/results.json
 styles/styles.css
