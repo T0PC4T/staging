@@ -16,53 +16,93 @@
 
   <body>
 <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" style="height: 60px;" href="https://juventutem.org">
-            <img src="images/logo.png" width="50px" height="60px" style="max-height: unset;">
-            <span class="title is-5 ml-2 has-text-primary">Juventutem</span>
-        </a>
+  <div class="navbar-brand">
+    <a class="navbar-item" style="height: 60px" href="https://juventutem.org">
+      <img
+        src="images/logo.png"
+        width="50px"
+        height="60px"
+        style="max-height: unset"
+      />
+      <span class="title is-5 ml-2 has-text-primary">Juventutem</span>
+    </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-        
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item"> Videos </a>
+
+      <a class="navbar-item"> Books </a>
+      <a class="navbar-item"> Support </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> About </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="/chapters"> Chapters </a>
+          <hr class="navbar-divider" />
+          <a class="navbar-item" href="/affiliate"> Affiliate </a>
+          <a class="navbar-item" href="/approvals"> Approvals </a>
+          <a class="navbar-item" href="/wyd"> World Youth Day </a>
+        </div>
+      </div>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item"> Videos </a>
-
-            <a class="navbar-item"> Books </a>
-            <a class="navbar-item"> Support </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link"> About </a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item"> Chapters </a>
-                    <a class="navbar-item"> Affiliate </a>
-                    <a class="navbar-item"> Approvals </a>
-                    <a class="navbar-item"> World Youth Day </a>
-                    <hr class="navbar-divider" />
-                    <a class="navbar-item"> Commitments </a>
-                </div>
-            </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Contact</strong>
+          </a>
         </div>
-
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Contact</strong>
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</nav>    <section
+  </div>
+</nav>
+<!-- Social card -->
+<section class="has-background-light is-fullwidth p-2">
+  <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-flex-end">
+    <p class="has-text-primary">
+        Follow us on social media:&nbsp;&nbsp;&nbsp;
+    </p>
+    <a title="Follow on Twitter" href="#" class="m-2">
+      <figure class="media-left">
+        <p class="image is-32x32">
+          <img src="images/twitter.png" />
+        </p>
+      </figure>
+    </a>
+    <!--  -->
+    <a title="Follow on Youtube" href="#" class="m-2">
+      <figure class="media-left">
+        <p class="image is-32x32">
+          <img src="images/youtube.png" />
+        </p>
+      </figure>
+    </a>
+    <!--  -->
+    <a title="Follow on Facebook" href="#" class="m-2">
+      <figure class="media-left">
+        <p class="image is-32x32">
+          <img src="images/facebook.png" />
+        </p>
+      </figure>
+    </a>
+  </div>
+</section>    <section
       class="hero is-info is-medium is-bold"
       style="
         background-image: url('images/banner.png');
@@ -222,7 +262,7 @@
           <!-- END ARTICLE -->
         </div>
         <!--  -->
-<div class="column is-3-desktop is-2-widescreen">
+<div class="column is-4-desktop is-3-widescreen">
   <nav class="panel has-background-white">
     <p class="panel-heading">Postings</p>
     <div class="panel-block">
@@ -238,10 +278,7 @@
       <a>News</a>
     </p> -->
     <!-- <a class="panel-block is-active" data-function="fetchFor(blogEvents)"> -->
-    <a class="panel-block" data-function="fetchFor(blogEvents)">
-      <span class="panel-icon">
-        <i class="fas fa-book" aria-hidden="true"></i>
-      </span>
+    <a class="panel-block dart-function-blinder" data-function="fetchFor(blogEvents)">
       *|title|*
     </a>
 
@@ -255,7 +292,7 @@
 </div>      </section>
       <!-- END ARTICLE FEED -->
     </div>
-<footer class="footer">
+<footer class="footer has-background-grey-lighter">
   <div class="content has-text-centered">
     <p>
       <strong>Fœderatio Internationalis Juventutem.</strong>
@@ -312,7 +349,6 @@
   window.CrenderOptions = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: function (node, next) {
-        console.log(node);
         return `<div class="columns is-fullwidth">
           <div
             class="column is-8-mobile is-6-desktop is-offset-2-mobile is-offset-3-desktop"

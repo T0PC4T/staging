@@ -1,8 +1,13 @@
 .dart_tool/package_config.json
 .packages
 about.html
+affiliate.html
+approvals.html
 images/banner.jpg
+images/facebook.png
 images/logo.png
+images/twitter.png
+images/youtube.png
 index.html
 main.dart.js
 packages/$sdk/dev_compiler/amd/require.js
@@ -49,5 +54,6 @@ packages/vm_service/DEPENDENCIES.md
 packages/vm_service/src/DEPENDENCIES.md
 packages/vm_service/src/README.md
 packages/web/fix_data.yaml
+src/a.html
 src/plugins/results.json
 styles/styles.css
